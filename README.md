@@ -1,7 +1,6 @@
 # play25Template
 
 [![License](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/share-your-work/public-domain/cc0/)
-[![Build Status](https://travis-ci.org/mslinn/play25template.svg?branch=master)](https://travis-ci.org/mslinn/play25template)
 [![GitHub version](https://badge.fury.io/gh/mslinn%2Fplay25Template.svg)](https://badge.fury.io/gh/mslinn%2Fplay25Template)
 
 Template for Play 2.5.x projects, including all official Play Framework dependencies,
