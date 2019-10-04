@@ -11,7 +11,7 @@ version      := "0.2.2"
 
 herokuAppName in Compile := "play25-template" // TODO change "play25-template" to a project name that you like
 
-scalaVersion := "2.11.8"
+scalaVersion := "2.11.12"
 
 scalacOptions ++= Seq(
   "-deprecation",
@@ -75,9 +75,9 @@ fork in Test := true
 parallelExecution in Test := false
 
 resolvers ++= Seq(
-  "webjars" at "http://webjars.github.com/m2",
+  "webjars" at "https://webjars.github.com/m2",
   //Resolver.file("Local Repository", file(sys.env.get("PLAY_HOME").map(_ + "/repository/local").getOrElse("")))(Resolver.ivyStylePatterns),
-  Resolver.url("play-plugin-releases", new URL("http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/"))(Resolver.ivyStylePatterns)
+  Resolver.url("play-plugin-releases", new URL("https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/"))(Resolver.ivyStylePatterns)
 )
 
 // define the statements initially evaluated when entering 'console', 'console-quick', or 'console-project'
