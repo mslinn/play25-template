@@ -62,6 +62,8 @@ libraryDependencies ++= Seq(
   "junit"                  %  "junit"              % "4.12"  % Test
 )
 
+licenses += ("CC0", url("https://creativecommons.org/publicdomain/zero/1.0/"))
+
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 enablePlugins(ApiMappings)
 
