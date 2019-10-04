@@ -1,5 +1,6 @@
 # play25Template
 
+[![License](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/share-your-work/public-domain/cc0/)
 [![Build Status](https://travis-ci.org/mslinn/play25template.svg?branch=master)](https://travis-ci.org/mslinn/play25template)
 [![GitHub version](https://badge.fury.io/gh/mslinn%2Fplay25Template.svg)](https://badge.fury.io/gh/mslinn%2Fplay25Template)
 
@@ -14,16 +15,16 @@ lecture discusses this GitHub project in detail.
 ## Using GitHub?
 
 ### GitHub Pages
-`sbtTemplate` sets up the GitHub pages branch for your new project.
-Before you can use it, edit `build.sbt` and change this line so your GitHub user id and project name are substituted 
+`play25Template` sets up the GitHub pages branch for your new project.
+Before you can use it, edit `build.sbt` and change this line so your GitHub user id and project name are substituted
 for the placeholders `yourGithubId` and `my-new-project`:
 
     git.remoteRepo := "git@github.com:yourGithubId/my-new-project.git"
-    
+
 Now you can publish the Scaladoc for your project with this command:
 
     sbt ";doc ;ghpagesPushSite"
-    
+
 The Scaladoc will be available at a URL of the form:
 
     http://yourGithubId.github.io/my-new-project/latest/api/index.html
@@ -31,7 +32,7 @@ The Scaladoc will be available at a URL of the form:
 The Scaladoc for this template project is [here](http://mslinn.github.io/play25-template/latest/api/index.html)
 
 ### Try Hub!
-With `hub` and `sbtTemplate` you can create a new SBT project and a matching GitHub project with only two commands.
+With `hub` and `play25Template` you can create a new SBT project and a matching GitHub project with only two commands.
 The setup documented below will supply your GitHub username and password,
 and will only prompt your for your 2-factor-authentication (2FA) token each time
 you run it if you set up your GitHub account to use 2FA.
@@ -60,10 +61,10 @@ Reload `~/.bash_profile`
 
     $ source `~/.profile`
 
-#### Using sbtTemplate with Hub
+#### Using play25Template with Hub
 Create a new SBT project and create a new GitHub project, which `hub` automatically adds as a `git` `remote`:
 
-    $ sbtTemplate bigBadProject
+    $ play25Template bigBadProject
     $ git create -d "Project description"
     two-factor authentication code: 881078
     Updating origin
